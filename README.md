@@ -61,23 +61,15 @@ print("BH adjusted p-values:", bh_result['padj'])
 
 ### Bonferroni Correction
 
-The Bonferroni correction controls the family-wise error rate (FWER) by multiplying each p-value by the number of tests:
+The Bonferroni correction is a conservative method that controls the family-wise error rate (FWER). It ensures that the probability of making at least one Type I error across all tests remains below the chosen significance level. This method is most appropriate when you want to be very confident that none of your significant results are false positives, even if it means missing some true effects.
 
-```
-p_adj = p * m
-```
-
-Where `m` is the number of tests.
+**When to use**: When you need to be very conservative and can afford to miss some true effects to avoid false discoveries.
 
 ### Benjamini-Hochberg Correction
 
-The Benjamini-Hochberg correction controls the false discovery rate (FDR) using a step-up procedure:
+The Benjamini-Hochberg (BH) correction controls the false discovery rate (FDR), which is the expected proportion of false positives among all rejected hypotheses. Unlike Bonferroni, BH is less conservative and allows for a controlled proportion of false discoveries while maintaining good statistical power to detect true effects.
 
-```
-p_adj = p * m / i
-```
-
-Where `m` is the number of tests and `i` is the rank of the p-value.
+**When to use**: When you want to balance between detecting true effects and controlling false discoveries, especially in exploratory research or when testing many hypotheses.
 
 ## Requirements
 
