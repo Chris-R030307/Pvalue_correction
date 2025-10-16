@@ -3,7 +3,7 @@
 Simple test script to verify the package works correctly.
 """
 
-from pval_corrections import correction_engine
+from pval_corrections import correction
 
 def test_package():
     """Test the pval_corrections package."""
@@ -14,13 +14,13 @@ def test_package():
     
     # Test Bonferroni correction
     print("\n1. Testing Bonferroni correction:")
-    bonferroni_result = correction_engine(p_values, 'bonferroni')
+    bonferroni_result = correction(p_values, 'bonferroni')
     print(f"Original p-values: {bonferroni_result['p originals']}")
     print(f"Bonferroni adjusted: {bonferroni_result['padj']}")
     
     # Test Benjamini-Hochberg correction
     print("\n2. Testing Benjamini-Hochberg correction:")
-    bh_result = correction_engine(p_values, 'benjamini_hochberg')
+    bh_result = correction(p_values, 'benjamini_hochberg')
     print(f"Original p-values: {bh_result['p originals']}")
     print(f"BH adjusted: {bh_result['padj']}")
     

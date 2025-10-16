@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "pval-corrections"
 version = "0.1.0"
 authors = [
-    {name = "Your Name", email = "your.email@example.com"},
+    {name = "Christopher Ren", email = "chris.ren@emory.edu"},
 ]
 description = "A Python package for statistical p-value corrections"
 readme = "README.md"

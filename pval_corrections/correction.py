@@ -25,7 +25,7 @@ def benjamini_hochberg_correction(p_values):
     return padj
 
 correction_methods = ['bonferroni', 'benjamini_hochberg']
-def correction_engine(p_values, correction_method):
+def correction(p_values, correction_method):
     if correction_method == 'benjamini_hochberg':
         return benjamini_hochberg_correction(p_values)
     elif correction_method == 'bonferroni':
@@ -33,7 +33,7 @@ def correction_engine(p_values, correction_method):
 
 # p_values = [0.01, 0.02, 0.03, 0.04, 0.05]
 # correction_method = 'bf'
-# padj = correction_engine(p_values, correction_method)
+# padj = correction(p_values, correction_method)
 # print(padj)
 
 

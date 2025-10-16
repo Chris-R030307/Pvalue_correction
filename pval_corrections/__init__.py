@@ -5,22 +5,22 @@ A Python package for statistical p-value corrections including:
 - Bonferroni correction
 - Benjamini-Hochberg correction
 
-Author: Your Name
+Author: Chris-R030307
 Version: 0.1.0
 """
 
 from .correction import (
     bonferroni_correction,
     benjamini_hochberg_correction,
-    correction_engine
+    correction
 )
 
 __version__ = "0.1.0"
-__author__ = "Your Name"
-__email__ = "your.email@example.com"
+__author__ = "Chris-R030307"
+__email__ = "chris.r030307@example.com"
 
 __all__ = [
     "bonferroni_correction",
     "benjamini_hochberg_correction", 
-    "correction_engine"
+    "correction"
 ]

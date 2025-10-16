@@ -13,7 +13,7 @@ A Python package for statistical p-value corrections including Bonferroni and Be
 ### From Source
 
 ```bash
-git clone https://github.com/yourusername/pval-corrections.git
+git clone https://github.com/Chris-R030307/Pvalue_correction.git
 cd pval-corrections
 pip install -e .
 ```
@@ -21,7 +21,7 @@ pip install -e .
 ### Development Installation
 
 ```bash
-git clone https://github.com/yourusername/pval-corrections.git
+git clone https://github.com/Chris-R030307/Pvalue_correction.git
 cd pval-corrections
 pip install -e ".[dev]"
 ```
@@ -31,17 +31,17 @@ pip install -e ".[dev]"
 ### Python API
 
 ```python
-from pval_corrections import correction_engine
+from pval_corrections import correction
 
 # Example p-values
 p_values = [0.01, 0.02, 0.03, 0.04, 0.05]
 
 # Bonferroni correction
-bonferroni_result = correction_engine(p_values, 'bonferroni')
+bonferroni_result = correction(p_values, 'bonferroni')
 print("Bonferroni adjusted p-values:", bonferroni_result['padj'])
 
 # Benjamini-Hochberg correction
-bh_result = correction_engine(p_values, 'benjamini_hochberg')
+bh_result = correction(p_values, 'benjamini_hochberg')
 print("BH adjusted p-values:", bh_result['padj'])
 ```
 
@@ -118,8 +118,8 @@ If you use this package in your research, please cite:
 ```bibtex
 @software{pval_corrections,
   title={P-value Corrections},
-  author={Your Name},
+  author={Chris-R030307},
   year={2024},
-  url={https://github.com/yourusername/pval-corrections}
+  url={https://github.com/Chris-R030307/Pvalue_correction}
 }
 ```
