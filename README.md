@@ -1,6 +1,11 @@
 # P-value Corrections
 
+[![PyPI version](https://badge.fury.io/py/pval-corrections.svg)](https://badge.fury.io/py/pval-corrections)
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+
 A Python package for statistical p-value corrections including Bonferroni and Benjamini-Hochberg corrections.
+
+**Available on PyPI**: https://pypi.org/project/pval-corrections/
 
 ## Features
 
@@ -9,6 +14,12 @@ A Python package for statistical p-value corrections including Bonferroni and Be
 - **Python API**: Simple programmatic interface
 
 ## Installation
+
+### From PyPI (Recommended)
+
+```bash
+pip install pval-corrections
+```
 
 ### From Source
 
